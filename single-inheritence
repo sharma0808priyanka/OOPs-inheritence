@@ -1,0 +1,36 @@
+using System;
+
+namespace single_inheritence
+{
+   
+        class Father //base class
+        {
+            public void Cloth() //method-1
+            {
+                Console.WriteLine("father's clothes");
+            }
+            public void Shirt() //method-2
+            {
+                Console.WriteLine("father's shirt");
+            }
+        }
+        class Boychild : Father //subclass 
+        {
+            public void Shoes() //method-1
+            {
+                Console.WriteLine("Child is using father's Shoes");
+            }
+        }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Boychild b = new Boychild(); //create object
+            b.Cloth(); //call first baseclass'method
+            b.Shirt(); //call second baseclass'method
+            b.Shoes(); //call first subclass'method
+
+        }
+    }
+
+}
