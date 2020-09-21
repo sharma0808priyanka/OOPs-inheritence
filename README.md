@@ -1,4 +1,4 @@
-# OOPs-inheritence
+# OOPs
 # Using-C#
 I will write all OOPs concept example starting from inheritence  and slowly we will reach abstraction and encapsulation.
 so here are some topics which i will coverup and write all example using C#
