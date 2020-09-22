@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Hybrid_Inheritance
+{   
+        class Father
+        {
+            public void Home()
+            {
+                Console.WriteLine("This is father's home ");
+            }
+          
+        }
+        class Mother:Father
+        {
+           public void CookFood()
+           {
+            Console.WriteLine("Mother cooks food");
+           }
+        }
+        class Son  : Mother
+        {
+            public void Shoes()
+            {
+                Console.WriteLine("This is my shoes");
+            }
+        }
+        class Daughter : Father
+        {
+            public void Books()
+            {
+            Console.WriteLine("These all are my Books");
+            }
+        }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Mother m = new Mother();
+            m.Home();
+            Son s = new Son();
+            s.Home();
+            s.CookFood();
+            Daughter d = new Daughter();
+            d.Home();
+        }
+    }
+
+}
