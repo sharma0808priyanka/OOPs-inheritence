@@ -1,0 +1,43 @@
+using System;
+
+namespace Multilevel_Inheritence
+{   
+        class Father
+        {
+            public void Cloth()
+            {
+                Console.WriteLine("father's cloth ");
+            }
+            public void Shirt()
+            {
+                Console.WriteLine("father's shirt");
+            }
+        }
+        class Boychild  : Father
+        {
+            public void Shoes()
+            {
+                Console.WriteLine("This is my shoes");
+            }
+        }
+    class Girlchild : Boychild
+    {
+        public void Books()
+        {
+            Console.WriteLine("These all are my Books");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Girlchild girl = new Girlchild();
+            girl.Cloth();
+            girl.Shirt();
+            girl.Shoes();
+            girl.Books();
+
+        }
+    }
+
+}
