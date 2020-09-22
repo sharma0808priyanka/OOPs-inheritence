@@ -1,6 +1,6 @@
 using System;
 
-namespace single_inheritence
+namespace single_inheritance
 {
    
         class Father //base class
