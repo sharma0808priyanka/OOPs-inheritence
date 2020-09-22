@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Multiple_Inheritance
+{   
+        interface Father
+        { 
+             void Home();           
+        }
+        interface Mother
+        {
+             void CookFood();
+        }
+        class Son:Father,Mother
+        {
+          public void Home()
+           {
+            Console.WriteLine("Father's home");
+           }
+        public void CookFood()
+        {
+            Console.WriteLine("Mother cooks food");
+        }
+        }
+       
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Father f = new Son();
+            f.Home();
+            Mother m = new Son();
+            m.CookFood();
+           
+           
+        }
+    }
+
+}
