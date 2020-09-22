@@ -1,0 +1,39 @@
+using System;
+
+namespace Hierarchical_Inheritence
+{   
+        class Father
+        {
+            public void Home()
+            {
+                Console.WriteLine("This is father's home ");
+            }
+          
+        }
+        class Boychild  : Father
+        {
+            public void Shoes()
+            {
+                Console.WriteLine("This is my shoes");
+            }
+        }
+    class Girlchild : Father
+    {
+        public void Books()
+        {
+            Console.WriteLine("These all are my Books");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Girlchild girl = new Girlchild();
+            girl.Home();
+            Boychild boy = new Boychild();
+            boy.Home();
+
+        }
+    }
+
+}
