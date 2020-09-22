@@ -1,6 +1,6 @@
 using System;
 
-namespace Hierarchical_Inheritence
+namespace Hierarchical_Inheritance
 {   
         class Father
         {
