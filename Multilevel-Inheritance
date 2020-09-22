@@ -1,6 +1,6 @@
 using System;
 
-namespace Multilevel_Inheritence
+namespace Multilevel_Inheritance
 {   
         class Father
         {
